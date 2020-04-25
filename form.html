@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="en">
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<header>
+	<div class="logo">
+		<img src="download.png" width="200" height="80">
+	</div><br>
+	<div class="form">
+		<strong>Online SUC Form</strong>
+	</div><br>
+     <div class="note">
+     	<p class="red">
+     		Note!!:
+     	</p>
+     	<ol>
+     		<li>This forms contains three (3) parts,please fill out this form before submission.</li>
+     		<li>Please all complete,Thank you.</li>
+     		<li>No amendment is allowed after you submit your application.</li>
+     	</ol>
+     </div>
+</header>
+<section><br>
+	 <form name="registration" action="#" method="post" onsubmit="return formValidation();">
+	<div class="all">
+		<div class="choose">
+			<h2>1)Intake&Choice</h2>
+			<p style="margin-left: 20px;">Intake and programme</p>
+			<p class="qua">
+				<strong>Please select intake year and intake.</strong><br>
+				<label for="2020 Jun">
+					<input id="2020Jun" type="radio" name="2020Jun">2020 Jun
+				</label><br>
+				<label for="2020 Aug">
+					<input id="2020Aug" type="radio" name="2020Aug">2020 Aug
+				</label>
+			</p>
+			<div class="qua">
+				<h2>Choice of Programme</h2>
+				<p>Please select two</p>
+				<label for="programme">1st Choice:</label><br>
+				<select name="programme">
+					<option value="-1"></option>
+					<option value="2">Intformation Technogy</option>
+					<option>Accounting</option>
+					<option>Arts and Design</option>
+				</select><br>
+				<label for="programme">2st Choice:</label><br>
+				<select name="programme">
+					<option value="0"></option>
+					<option>Intformation Technogy</option>
+					<option>Accounting</option>
+					<option>Arts and Design</option>
+				</select>
+			</div><br>
+			<div class="qua">Hostel<br>
+				<input type="radio" name="hostel"><label for="hostel" >Yes</label>
+				<input type="radio" name="hostel"><label for="hostel">No</label>
+		 	</div><br>
+		 	<div class="qua">Scholarship<br>
+		 	<select name="scholarship">
+					<option>None</option>
+					<option>Excellent Student Full Scholarship</option>
+					<option>New Student Scholarship</option>
+					<option>Multi CulturalScholarship</option>
+				</select>
+			</div><br>
+		</div>
+	<br>
+	<div class="second">
+		<div class="choose">
+		<h2>2)Personal Information</h2><br>
+		<div class="qua"><label for="name">Name</label><br>
+			<input type="text" name="name" placeholder="Name" required>
+			</div>
+			<div id="nameError"></div><br>
+
+			<div class="qua">Gender<br>
+			<input type="radio" name="gender"><label for="female">Female</label>
+			<input type="radio" name="gender"><label for="male">Male</label>
+			</div><br>
+
+			<div class="qua"><label for="birthday">Date of Birth</label> <br>
+				<input type="text" name="birthday" placeholder="00/00/0000">
+			</div><br>
+			<div class="qua" ><label for="IC">IC.No:</label><br>
+				<input type="IC" name="IC" placeholder="000000-00-0000" required="">
+			</div><br>
+			<div class="qua">Race:<br>
+				<input type="radio" name="race"><label for="race">Chinese</label>
+				<input type="radio" name="race"><label for="race">Malay</label>
+				<input type="radio" name="race"><label for="race">Indian</label>
+			</div><br>
+			<div class="qua">Mobile Phone:<br>
+				<input type="text" name="mobile" placeholder="xxx-xxxxxxx" required>
+			</div><br>
+			<div class="qua">Address:<br>
+				<input type="text" name="address" placeholder="Address" required>
+			</div><br>
+			<div class="qua">E-mail:<br>
+				<input type="text" name="email" placeholder="E-mail">
+			</div><br>
+		</div>
+	</div>
+	<div class="three">
+		<div class="choose">
+			<h2>3)Certificate & Grades</h2><br>
+			<div class="qua">Certificate<br>
+		<select required>
+			<option>SPM</option>
+			<option>A-level</option>
+			<option>STPM</option>
+			<option>O-level</option>
+		</select><br>
+		<table>
+			<th>Subject</th><br>
+			<th>Grade</th>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+						<option>Bahasa Melayu</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+						<option>Bahasa Melayu</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+						<option>Bahasa Melayu</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+						<option>Bahasa Melayu</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+						<option>Bahasa Melayu</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+						<option>Bahasa Melayu</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+		</table><br>
+		</div>
+	  </div><br>
+	  <input  style="margin-top: 400px; margin-bottom: 30px;margin-left: 165px;" type="submit" name="submit" value="Submit" class="submit" onclick="formValidation()">
+</div>
+</form>
+</section>
+ <script src="form.js"></script>
+</body>
+</html>
